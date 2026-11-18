@@ -20,6 +20,5 @@ jobs:
 
     #that ephermal container  will have steps to excute, hence name those steps and run:rub the commnad
     steps:
-      
-      -name: Say hello to everyone
-       run: echo "hello dosto"
+      - name: Say hello to everyone
+      run: echo "hello dosto"
