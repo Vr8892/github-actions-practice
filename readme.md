@@ -1,7 +1,6 @@
-a Github action practice 
+#a Github action practice 
 
-a concpts
+##a concpts
 
-a workflows 
-
+## 1. workflows 
 to creat a github actions workflow you need a folder called '.github/workflows'
