@@ -20,4 +20,4 @@ jobs:
       - name: Install linker
         run : pip install ruff
       - name: check the files for linking
-        run: ruff check .
+        run: ruff check . --fix
