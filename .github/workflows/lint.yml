@@ -17,4 +17,6 @@ jobs:
       - name: Checkout/clone the code
         uses: actions/checkout@v7
           # actions/checkout is used for clone the code and v7 is version
+      - name: Install linker
+        run : pip install ruff
     
