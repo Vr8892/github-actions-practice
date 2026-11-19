@@ -1,23 +1,24 @@
-name: cicd
 
-on: 
- workflows_dispatch
+name: CI-CD
+
+on:
+  workflow_dispatch:
 
 jobs:
- runs-on: ubantu-latest
- steps:
-     - name: clone the code
-       run: echo "cleaning the code"
-   test: 
-     runs-on: ubantu-latest
-     steps:
-       - name: Running the test cases
-         run: echo "testing the app"
-   deploy:
-     runs-on: ubantu-latest
-     steps:
-         - name: Running the test cases
-           run: echo "testing the app"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the code
+        run: echo "Cleaning the code"
 
-    
-     
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running the test cases
+        run: echo "Testing the app"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the application
+        run: echo "Deploying the app"
