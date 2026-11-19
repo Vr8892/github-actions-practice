@@ -1,0 +1,20 @@
+# what is goal of workflow
+#goal: whenevere someone changes the python code.
+# the linter willl check if the sytax,format,indentation is corret or no
+
+name: Auto Linter
+
+on: 
+  push:
+  #this means whmnerevre u push specfic the file it perform the workflow,
+    paths: "*.py"
+    #path is chose the file 
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout/clone the code
+        uses: actions/checkout@v7
+          # actions/checkout is used for clone the code and v7 is version
+    
